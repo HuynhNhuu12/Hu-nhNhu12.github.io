@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*Slideshow*/
+/*a.slideshow {
+  font-size: 100%;
+  background: black; 
+  opacity: 0.75; 
+  padding: 4px ;
+  color: white ; 
+  text-decoration: none
+}*/
+
+ .navbar{
+    margin-bottom: 0px;
+} 
+
+#myCarousel {
+    width:90%;
+    height: 500px;
+    margin: 0 auto;
+}
+.carousel-inner img {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%); /* make all photos black and white */
+  width: 90%; /* Set width to 100% */
+  margin: 0 auto;
+}
+
+.carousel-caption h3 {
+  color: #fff !important;
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+}

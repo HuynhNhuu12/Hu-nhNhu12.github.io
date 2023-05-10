@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.HN_SaleWeb_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.hn.pojo.OrderDetail</class>
+    <class>com.hn.pojo.SaleOrder</class>
+    <class>com.hn.pojo.Product</class>
+    <class>com.hn.pojo.TravelBooking</class>
+    <class>com.hn.pojo.TourBooking</class>
+    <class>com.hn.pojo.BookingTour</class>
+    <class>com.lth.utils.Category</class>
+    <class>com.lth.utils.User</class>
+    <class>com.lth.utils.Booking</class>
+    <class>com.lth.utils.BookingDetail</class>
+    <class>com.lth.utils.Tour</class>
+    <class>com.lth.utils.Comments</class>
+    <class>com.hn.pojo.Booking</class>
+    <class>com.hn.pojo.BookingDetail</class>
+    <class>com.hn.pojo.User</class>
+    <class>com.hn.pojo.Tour</class>
+    <class>com.hn.pojo.Category</class>
+    <class>com.hn.pojo.Comments</class>
+    <class>com.hn.pojo.News</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/saledb?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="12345678"/>
+    </properties>
+  </persistence-unit>
+</persistence>
